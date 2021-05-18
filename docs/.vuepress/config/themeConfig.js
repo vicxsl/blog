@@ -52,9 +52,9 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-    name: 'Evan Xu',
-    slogan: '前端界的小学生',
+    avatar: '/img/profile.jpg',
+    name: 'Vic Xu',
+    slogan: '永远期待美好的事情将会发生',
   },
   social: {
     // 社交图标，显示于博主信息栏和页脚栏
@@ -63,12 +63,12 @@ module.exports = {
       {
         iconClass: 'icon-youjian',
         title: '发邮件',
-        link: 'mailto:894072666@qq.com',
+        link: 'mailto:vicxsl@163.com',
       },
       {
         iconClass: 'icon-github',
         title: 'GitHub',
-        link: 'https://github.com/xugaoyi',
+        link: 'https://github.com/vicxsl',
       },
       {
         iconClass: 'icon-erji',
@@ -81,7 +81,7 @@ module.exports = {
     // 页脚信息
     createYear: 2019, // 博客创建年份
     copyrightInfo:
-      'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      'Vic Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   },
   htmlModules // 插入hmtl(广告)模块
 }

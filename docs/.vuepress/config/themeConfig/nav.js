@@ -11,6 +11,8 @@ module.exports = [
         items: [
           { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
           { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
+          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
+          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
         ],
       },
       {
@@ -42,11 +44,10 @@ module.exports = [
     ],
   },
   {
-    text: '页面',
-    link: '/ui/',
+    text: '后台',
+    link: '/back/',
     items: [
-      { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-      { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+
     ],
   },
   {
