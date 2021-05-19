@@ -10,7 +10,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github pages
-#echo 'papis.cn' > CNAME
+echo 'vicxsl.github.io' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
