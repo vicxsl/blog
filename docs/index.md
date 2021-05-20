@@ -13,7 +13,7 @@ features: # 可选的
     link: /web/ # 可选
     imgUrl: /img/web.png # 可选
   - title: 后台·架构
-    details: Java、Python、数据库、微服务后台技术 
+    details: Java、Python、数据库、微服务等后台技术 
     link: /back/
     imgUrl: /img/python.png
   - title: 技术
