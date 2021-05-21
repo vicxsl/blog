@@ -17,7 +17,9 @@ cd docs/.vuepress/dist
 if [ -z "$CODING_TOKEN" ]; then # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
   codingUrl=git@e.coding.net:vicsl/blog/blog.git
 else
-  codingUrl=https://HmuzsGrGQX:${CODING_TOKEN}@e.coding.net/vicsl/blog/blog.git
+  codingUrl=https://vicsl:${CODING_TOKEN}@e.coding.net/vicsl/blog/blog.git
+  git config --global user.name "vicxsl"
+  git config --global user.email "vicxsl@163.com"
 fi
 git add -A
 git commit -m "${msg}"
@@ -34,9 +36,6 @@ else
   msg='来自github actions的自动部署'
 
   githubUrl=https://vicxsl:${GITHUB_TOKEN}@github.com/vicxsl/vicxsl.github.io.git
-  https://github.com/vicxsl/vicxsl.github.io.git
-  git config --global user.name "vicxsl"
-  git config --global user.email "vicxsl@163.com"
 fi
 git init
 git add -A
