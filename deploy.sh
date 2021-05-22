@@ -18,13 +18,13 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:vicxsl/vicxsl.github.io.git
 else
   msg='来自github actions的自动部署'
-
   githubUrl=https://vicxsl:${GITHUB_TOKEN}@github.com/vicxsl/vicxsl.github.io.git
-  git config --global user.name "Vic"
+  git config --global user.name "vicxsl"
   git config --global user.email "vicxsl@163.com"
 fi
 git init
 git add -A
+git log
 git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 
