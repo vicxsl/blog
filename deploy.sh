@@ -27,9 +27,6 @@ git init
 
 printf "查看分支和仓库\n"
 git branch # 查看当前分支
-git status #   查看当前仓库的状态
-printf "打印当前目录\n"
-ll # 打印当前目录
 
 printf "添加文件\n"
 git add -A #  添加所有文件到暂存区
@@ -42,6 +39,9 @@ git commit -m "${msg}"
 
 printf "历史提交版本\n"
 git log
+
+printf "查看当前仓库的状态\n"
+git status #
 
 printf "推送到github\n"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
