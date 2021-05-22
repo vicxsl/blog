@@ -10,22 +10,6 @@ npm run build
 cd docs/.vuepress/dist
 
 
-#deploy to coding pages
-# echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
-# echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件
-
-if [ -z "$CODING_TOKEN" ]; then # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
-  codingUrl=git@e.coding.net:vicsl/blog/blog.git
-else
-  codingUrl=https://vicsl:${CODING_TOKEN}@e.coding.net/vicsl/blog/blog.git
-  git config --global user.name "vicxsl"
-  git config --global user.email "vicxsl@163.com"
-fi
-git add -A
-git commit -m "${msg}"
-git push -f $codingUrl master # 推送到coding
-
-
 # deploy to github pages
 #echo 'vicxsl.github.io' > CNAME
 
@@ -36,11 +20,26 @@ else
   msg='来自github actions的自动部署'
 
   githubUrl=https://vicxsl:${GITHUB_TOKEN}@github.com/vicxsl/vicxsl.github.io.git
+  git config --global user.name "Vic"
+  git config --global user.email "vicxsl@163.com"
 fi
 git init
 git add -A
 git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
+
+#deploy to coding pages
+# echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
+# echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件
+
+if [ -z "$CODING_TOKEN" ]; then # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
+  codingUrl=git@e.coding.net:vicsl/blog/blog.git
+else
+  codingUrl=https://vicsl:${CODING_TOKEN}@e.coding.net/vicsl/blog/blog.git
+fi
+git add -A
+git commit -m "${msg}"
+git push -f $codingUrl master # 推送到coding
 
 cd -
 rm -rf docs/.vuepress/dist
