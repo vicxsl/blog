@@ -17,6 +17,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:vicxsl/vicxsl.github.io.git
 else
+  printf "开始github actions的自动部署\n"
   msg='来自github actions的自动部署'
   githubUrl=https://vicxsl:${GITHUB_TOKEN}@github.com/vicxsl/vicxsl.github.io.git
   git config --global user.name "vicxsl"
@@ -43,8 +44,8 @@ git status
 printf "历史提交版本\n"
 git log
 
-printf "推送到github gh-pages分支\n"
-git push -f $githubUrl gh-pages
+printf "推送到github gh-pages分支 push -f $githubUrl gh-pages\n"
+git push -f $githubUrl master:gh-pages
 
 #deploy to coding pages
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
