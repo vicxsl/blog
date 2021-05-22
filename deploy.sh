@@ -22,10 +22,21 @@ else
   git config --global user.name "vicxsl"
   git config --global user.email "vicxsl@163.com"
 fi
+printf "初始化仓库\n"
 git init
-git add -A
-git log
+printf "查看分支和仓库\n"
+git branch # 查看当前分支
+git status #   查看当前仓库的状态
+ll # 打印当前目录
+printf "添加文件\n"
+git add -A #  添加所有文件到暂存区
+printf "历史提交版本\n"
+git log #   查看本地仓库中的历史提交版本
+printf "提交\n"
 git commit -m "${msg}"
+printf "历史提交版本\n"
+git log
+printf "推送到github\n"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 
 #deploy to coding pages
