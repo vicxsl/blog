@@ -52,14 +52,34 @@ printf "推送完成"
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
 # echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件
 
+printf "开始coding pages的自动部署\n"
 if [ -z "$CODING_TOKEN" ]; then # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
   codingUrl=git@e.coding.net:vicsl/blog/blog.git
 else
   codingUrl=https://vicsl:${CODING_TOKEN}@e.coding.net/vicsl/blog/blog.git
 fi
+
+
+
+printf "添加文件\n"
 git add -A
+
+printf "查看当前仓库的状态\n"
+git status
+
+printf "提交\n"
 git commit -m "${msg}"
-git push -f $codingUrl master # 推送到coding
+
+printf "查看当前仓库的状态\n"
+git status
+
+printf "历史提交版本\n"
+git log
+
+printf "推送到coding\n"
+git push -f $codingUrl master
+
+printf "推送完成\n"
 
 cd -
 rm -rf docs/.vuepress/dist
