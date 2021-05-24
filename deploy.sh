@@ -46,7 +46,7 @@ git log
 
 printf "推送到github gh-pages分支,地址： %s\n" "$githubUrl"
 git push -f $githubUrl master:gh-pages
-printf "推送完成"
+printf "推送完成 \n"
 
 #deploy to coding pages
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
