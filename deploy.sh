@@ -59,6 +59,7 @@ else
   codingUrl=https://vicsl:${CODING_TOKEN}@e.coding.net/vicsl/CODING-Pages-1305981473/CODING-Pages.git
 fi
 
+printf "重新初始化仓库\n"
 rm -rf .git
 
 git init
