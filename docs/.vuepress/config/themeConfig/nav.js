@@ -46,7 +46,7 @@ module.exports = [
     text: '后台',
     link: '/back/',
     items: [
-
+      { text: 'Oracle查看SQL执行计划', link: '/pages/3ef014/' }
     ],
   },
   {
