@@ -54,12 +54,14 @@ printf "推送完成 \n"
 
 printf "开始coding pages的自动部署\n"
 if [ -z "$CODING_TOKEN" ]; then # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
-  codingUrl=git@e.coding.net:vicsl/blog/blog.git
+  codingUrl=git@git@e.coding.net:vicsl/CODING-Pages-1305981473/CODING-Pages.git
 else
-  codingUrl=https://vicsl:${CODING_TOKEN}@e.coding.net/vicsl/blog/blog.git
+  codingUrl=https://vicsl:${CODING_TOKEN}@e.coding.net/vicsl/CODING-Pages-1305981473/CODING-Pages.git
 fi
 
+rm -rf .git
 
+git init
 
 printf "添加文件\n"
 git add -A
