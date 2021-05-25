@@ -25,14 +25,8 @@ fi
 printf "初始化仓库\n"
 git init
 
-printf "查看分支和仓库\n"
-git branch # 查看当前分支
-
-printf "添加文件\n"
-git add -A #  添加所有文件到暂存区
-
-printf "查看当前仓库的状态\n"
-git status
+printf "添加文件到暂存区\n"
+git add -A
 
 printf "提交\n"
 git commit -m "${msg}"
@@ -55,19 +49,16 @@ printf "开始coding pages的自动部署\n"
 if [ -z "$CODING_TOKEN" ]; then # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
   codingUrl=git@e.coding.net:vicsl/CODING-Pages/blog.git
 else
-  codingUrl=https://vicxsl:${CODING_TOKEN}@e.coding.net/vicsl/CODING-Pages/blog.git
+  codingUrl=https://gFXADQdPoz:${CODING_TOKEN}@e.coding.net/vicsl/CODING-Pages/blog.git
 fi
 
-printf "重新初始化仓库\n"
+printf "删除和重新初始化仓库\n"
 rm -rf .git
 
 git init
 
-printf "添加文件\n"
+printf "添加文件到暂存区\n"
 git add -A
-
-printf "查看当前仓库的状态\n"
-git status
 
 printf "提交\n"
 git commit -m "${msg}"
