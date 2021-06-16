@@ -53,7 +53,7 @@ module.exports = {
   blogger: {
     // 博主信息，显示在首页侧边栏
     avatar: '/img/profile.jpg',
-    name: 'Vic Xu',
+    name: 'Vic xu',
     slogan: '永远期待美好的事情将会发生',
   },
   social: {
