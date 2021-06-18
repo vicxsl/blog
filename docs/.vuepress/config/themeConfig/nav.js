@@ -47,7 +47,7 @@ module.exports = [
         link: '/back/',
         items: [
             {text: 'Database', link: '/pages/3ef014/'},
-            {text: 'Python', link: '/pages/3ef014/'},
+            {text: 'Python', link: '/pages/f22439/'},
             {
                 text: '学习笔记', items: [
                     {text: '《一个人工智能的诞生》笔记', link: '/note/《一个人工智能的诞生》笔记/'}]
