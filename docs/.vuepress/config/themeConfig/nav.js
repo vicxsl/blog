@@ -73,6 +73,15 @@ module.exports = [
             {text: '友情链接', link: '/friends/'},
         ],
     },
+    {
+        text: '脑图',
+        link: '/mind/',
+        items: [
+            {text: '大数据', link: '/mind/800e44/'},
+            {text: 'java', link: '/pages/eee83a9211a70f9d/'},
+            {text: '数据库', link: '/pages/12df8ace52d493f6/'},
+        ],
+    },
     {text: '关于', link: '/about/'},
     {
         text: '收藏',
