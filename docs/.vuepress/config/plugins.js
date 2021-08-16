@@ -107,4 +107,9 @@ module.exports = [
       },
     },
   ],
+  [
+    'vuepress-plugin-mindmap', // mindmap插件
+    {
+    },
+  ],
 ]
