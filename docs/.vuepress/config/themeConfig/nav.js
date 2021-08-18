@@ -42,8 +42,8 @@ module.exports = [
         text: '后台',
         link: '/back/',
         items: [
-            {text: '架构', link: '/pages/3ef014/'},
-            {text: 'Java', link: '/pages/3ef014/'},
+            {text: 'Microservices', link: '/pages/96a4d3/'},
+            {text: 'Java', link: '/pages/'},
             {text: 'Database', link: '/pages/3ef014/'},
             {text: 'Python', link: '/pages/f22439/'},
             {
