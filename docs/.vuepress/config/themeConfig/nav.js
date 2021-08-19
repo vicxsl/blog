@@ -43,7 +43,7 @@ module.exports = [
         link: '/back/',
         items: [
             {text: 'Microservices', link: '/pages/96a4d3/'},
-            {text: 'Java', link: '/pages/'},
+            // {text: 'Java', link: '/pages/'},
             {text: 'Database', link: '/pages/3ef014/'},
             {text: 'Python', link: '/pages/f22439/'},
             {
