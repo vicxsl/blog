@@ -42,7 +42,7 @@ module.exports = [
         text: '后台',
         link: '/back/',
         items: [
-            {text: 'Microservices', link: '/pages/96a4d3/'},
+            {text: '微服务', link: '/pages/4e4caa/'},
             // {text: 'Java', link: '/pages/'},
             {text: 'Database', link: '/pages/3ef014/'},
             {text: 'Python', link: '/pages/f22439/'},
@@ -80,6 +80,7 @@ module.exports = [
         link: '/mind/',
         items: [
             {text: '大数据', link: '/mind/800e44/'},
+            {text: '微服务', link: '/mind/3cc0a2/'},
         ],
     },
     {text: '关于', link: '/about/'},
