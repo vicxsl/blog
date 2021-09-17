@@ -27,10 +27,6 @@ module.exports = [
                         link: '/note/typescript-axios/',
                     },
                     {
-                        text: '《Git》学习笔记',
-                        link: '/note/git/',
-                    },
-                    {
                         text: 'TypeScript笔记',
                         link: '/pages/51afd6/',
                     },
@@ -46,11 +42,13 @@ module.exports = [
         text: '后台',
         link: '/back/',
         items: [
+            {text: '微服务', link: '/pages/4e4caa/'},
+            // {text: 'Java', link: '/pages/'},
             {text: 'Database', link: '/pages/3ef014/'},
-            {text: 'Python', link: '/pages/3ef014/'},
+            {text: 'Python', link: '/pages/f22439/'},
             {
                 text: '学习笔记', items: [
-                    {text: '《一个人工智能的诞生》笔记', link: '/note/《一个人工智能的诞生》笔记/'}]
+                    {text: '《一个人工智能的诞生》笔记', link: '/note/ai/'}]
             }
         ],
     },
@@ -60,9 +58,11 @@ module.exports = [
         items: [
             {text: '技术文档', link: '/pages/9a7ee40fc232253e/'},
             {text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/'},
-            {text: 'Nodejs', link: '/pages/117708e0af7f0bd9/'},
             {text: '博客搭建', link: '/pages/41f87d890d0a02af/'},
-        ],
+            {text: '学习笔记', items: [
+                    {text: '《Git》学习笔记', link: '/note/git/'}
+                ]}
+            ],
     },
     {
         text: '更多',
@@ -73,6 +73,14 @@ module.exports = [
             {text: '心情杂货', link: '/pages/2d615df9a36a98ed/'},
             {text: '实用技巧', link: '/pages/baaa02/'},
             {text: '友情链接', link: '/friends/'},
+        ],
+    },
+    {
+        text: '脑图',
+        link: '/mind/',
+        items: [
+            {text: '大数据', link: '/mind/800e44/'},
+            {text: '微服务', link: '/mind/3cc0a2/'},
         ],
     },
     {text: '关于', link: '/about/'},

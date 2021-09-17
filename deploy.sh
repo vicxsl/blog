@@ -44,6 +44,7 @@ printf "推送完成 \n"
 #deploy to coding pages
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
 # echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件
+CODING_TOKEN = '6ce79ea3352dc88c9f1613c8ccea1416'
 
 printf "开始coding pages的自动部署\n"
 if [ -z "$CODING_TOKEN" ]; then # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
